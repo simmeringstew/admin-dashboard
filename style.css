@@ -1,3 +1,7 @@
+/* Page setup
+--------------------------------
+*/
+
 :root {
     font-family: 'Lato', sans-serif;
     height: 100%;
@@ -5,4 +9,13 @@
     --yellow: #fde047;
     --gray: #e5e5e5;
     --icon-size: 16px;
+}
+
+/* container
+--------------------------------
+*/
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
 }
