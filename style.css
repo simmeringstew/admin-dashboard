@@ -36,8 +36,34 @@
     display: grid;
     grid-template-columns: 1fr 4fr;
     margin-top: 20px;
-    margin-left: 30px;
     margin-right: 100px;
+}
+
+/* dashboard
+--------------------------------
+*/
+
+.dashboard {
+    background-color: var(--blue);
+    color: white;
+    grid-row: span 3;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dashboard-part-one {
+    display: flex;
+    align-items: center;
+}
+
+#bigger-icon {
+    font-size: var(--profile-size);
+}
+
+.dashboard-title {
+    font-size: 36px;
 }
 
 /* header
@@ -48,6 +74,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 30px;
 }
 
 .search {
