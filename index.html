@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -16,8 +16,18 @@
 </head>
 <body>
     <div class="container">
-        <div class="header"></div>
         <div class="dashboard"></div>
+        <div class="header">
+            <div class="search">
+                <label class="material-symbols-outlined" for="search-bar">search</label>
+                <input type="text" id="search-bar" name="searchBar">
+            </div>
+            <div class="notifications">
+                <span class="material-symbols-outlined">notifications</span>
+                <img src="images/penguin-profile.png" alt="penguin profile picture" class="profile-normal">
+                <span class="name">simmeringstew</span>
+            </div>
+        </div>
         <div class="projects"></div>
     </div>
 </body>
