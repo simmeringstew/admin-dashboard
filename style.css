@@ -1,0 +1,8 @@
+:root {
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+    --blue: #0ea5e9;
+    --yellow: #fde047;
+    --gray: #e5e5e5;
+    --icon-size: 16px;
+}
