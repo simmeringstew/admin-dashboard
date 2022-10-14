@@ -8,8 +8,17 @@
     --blue: #0ea5e9;
     --yellow: #fde047;
     --gray: #e5e5e5;
-    --icon-size: 16px;
-    --profile-size: 16px;
+    --icon-size: 24px;
+    --profile-size: 48px;
+}
+
+.material-symbols-outlined {
+    font-size: var(--icon-size);
+}
+
+.profile-normal {
+    height: var(--profile-size);
+    width: var(--profile-size);
 }
 
 /* container
@@ -18,5 +27,33 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 100px;
+}
+
+/* header
+--------------------------------
+*/
+
+.first-line-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    gap: 20px;
+}
+
+.search>input {
+    background-color: var(--gray);
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    width: 300px;
+    padding: 5px;
+    font-size: 1rem;
 }
