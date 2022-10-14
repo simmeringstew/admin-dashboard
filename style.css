@@ -5,9 +5,9 @@
 :root {
     font-family: 'Lato', sans-serif;
     height: 100%;
+    background-color: #e5e5e5;
     --blue: #0ea5e9;
     --yellow: #fde047;
-    --gray: #e5e5e5;
     --icon-size: 24px;
     --profile-size: 48px;
     --title-size: 24px;
@@ -35,8 +35,6 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    margin-top: 20px;
-    margin-right: 100px;
 }
 
 /* dashboard
@@ -46,17 +44,17 @@
 .dashboard-background {
     background-color: var(--blue);
     min-height: 100vh;
-    margin-top: -20px;
 }
 
 .dashboard {
     color: white;
-    grid-row: span 3;
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: 20px;
+    gap: 15px;
 }
 
 #bigger-icon {
@@ -75,9 +73,18 @@
     padding-left: 10px;
 }
 
+.first-space, .second-space {
+    margin-bottom: 50px;
+}
 /* header
 --------------------------------
 */
+
+.header {
+    background-color: white;
+    padding-top: 20px;
+    padding-right: 100px;
+}
 
 .first-line-header {
     display: flex;
