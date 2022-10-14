@@ -43,16 +43,20 @@
 --------------------------------
 */
 
-.dashboard {
+.dashboard-background {
     background-color: var(--blue);
+    min-height: 100vh;
+    margin-top: -20px;
+}
+
+.dashboard {
     color: white;
     grid-row: span 3;
-    margin-top: -20px;
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: center;
     padding-left: 20px;
-    gap: 10px;
+    padding-right: 20px;
 }
 
 #bigger-icon {
