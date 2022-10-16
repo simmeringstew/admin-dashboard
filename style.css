@@ -34,7 +34,12 @@
     align-items: center;
     color: white;
     padding-top: 5px;
-    padding-bottom: 10px;
+}
+
+.collapsible-menu>label>span {
+    vertical-align: bottom;
+    font-size: 1.5rem;
+    margin-right: 10px;
 }
 
 .collapsible-menu>input#dashboard-collapse {
@@ -43,21 +48,28 @@
 
 .dashboard-content>ul>li {
     margin-bottom: 5px;
-    margin-left: 15px;
+    margin-left: 30px;
 }
 
 .dashboard-content>ul>li>a {
     text-decoration: none;
-    color:white
+    color:white;
+}
+
+.dashboard-content>ul>li>a>span {
+    vertical-align: bottom;
+    font-size: 2rem;
+    margin-right: 10px;
 }
 
 .dashboard-content {
     max-height: 0;
     overflow: hidden;
+    padding-top: 10px;
 }
 
 .collapsible-menu>input:checked ~ .dashboard-content {
-    max-height: 100%;
+    min-height: 100vh;
 }
 
 /* header
@@ -73,8 +85,8 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .search>input {
@@ -114,5 +126,5 @@
 }
 
 .buttons>button:active {
-    transform: translateY(2px);
+    background-color: #09648C;
 }
