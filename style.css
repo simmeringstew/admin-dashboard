@@ -22,6 +22,44 @@
     align-items: center;
 }
 
+/* collapsible-menu
+--------------------------------
+*/
+
+.collapsible-menu {
+    background-color: var(--blue);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.collapsible-menu>input#dashboard-collapse {
+    display: none;
+}
+
+.dashboard-content>ul>li {
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+.dashboard-content>ul>li>a {
+    text-decoration: none;
+    color:white
+}
+
+.dashboard-content {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.collapsible-menu>input:checked ~ .dashboard-content {
+    max-height: 100%;
+}
+
 /* header
 --------------------------------
 */
