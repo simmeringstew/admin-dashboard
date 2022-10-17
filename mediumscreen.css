@@ -209,4 +209,57 @@
 .card-title {
     font-weight: bolder;
     grid-column: span 2;
+    margin-left: 5px;
+    font-size: 1.2rem;
+    margin-bottom: -20px;
+}
+
+.tall-card {
+    background-color: white;
+    width: 95%;
+    height: 16rem;
+    padding: 15px;
+    border-radius: 8px;
+    grid-column: span 2;
+}
+
+.tall-card>hr {
+    width: 100%;
+}
+
+.announcements {
+    border-left: #be123c solid 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.announcements-title {
+    font-weight: bold;
+}
+
+.announcements-text {
+    font-size: 0.9rem;
+    color: var(--gray-text);
+}
+
+.trending {
+    border-left: #16a34a solid 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.full-profile {
+    display: flex;
+    gap: 10px;
+}
+
+.at-name {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.profile-tag {
+    color: var(--gray-text);
 }
