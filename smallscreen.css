@@ -162,6 +162,7 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    box-shadow: 0px 1px 2px gray;
 }
 
 .tall-card {
@@ -170,6 +171,7 @@
     height: 16rem;
     padding: 15px;
     border-radius: 8px;
+    box-shadow: 0px 1px 2px gray;
 }
 
 .tall-card>hr {
