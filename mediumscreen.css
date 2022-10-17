@@ -189,7 +189,7 @@
 .card {
     background-color: white;
     width: 90%;
-    height: 10rem;
+    height: 12rem;
     padding: 15px;
     border-radius: 8px;
     border-left: var(--yellow) solid 5px;
