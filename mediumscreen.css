@@ -1,0 +1,121 @@
+/* page setup
+--------------------------------
+*/
+
+:root {
+    font-family: 'Lato', sans-serif;
+    --blue: #0ea5e9;
+    --yellow: #fde047;
+    --gray: #e5e5e5;
+    --gray-text: #64748b;
+    --profile: 2rem;
+    background-color: var(--gray);
+}
+
+.profile-normal {
+    height: var(--profile);
+    width: var(--profile);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* collapsible-menu
+--------------------------------
+*/
+
+.collapsible-menu {
+    background-color: var(--blue);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    padding-top: 5px;
+}
+
+.collapsible-menu>label>span {
+    vertical-align: bottom;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.collapsible-menu>input#dashboard-collapse {
+    display: none;
+}
+
+.dashboard-content>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dashboard-content>ul>li>a {
+    text-decoration: none;
+    color:white;
+    font-size: 1.5rem;
+}
+
+.dashboard-content>ul>li>a>span {
+    vertical-align: bottom;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.dashboard-content {
+    max-height: 0;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.collapsible-menu>input:checked ~ .dashboard-content {
+    min-height: 50vh;
+}
+
+/* header
+--------------------------------
+*/
+
+.header-small {
+    display: none;
+}
+
+.header-big {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0px 1px 5px gray;
+}
+
+.first-line-header {
+    width: 100%;;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.search, .notifications {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search>input {
+    width: 24rem;
+    background-color: var(--gray);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+.search>input:focus {
+    outline-color: var(--blue);
+}

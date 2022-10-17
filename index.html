@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="meyer-reset.css">
     <link rel="stylesheet" href="smallscreen.css" media="screen and (max-width: 750px)">
+    <link rel="stylesheet" href="mediumscreen.css" media="screen and (min-width: 750px)">
     <link rel="icon" href="images/gear.png">
     <script defer src="script.js"></script>
     <meta charset="UTF-8">
@@ -15,7 +16,9 @@
     <title>Admin Dashboard</title>
 </head>
 <body>
+    <!--- Main container for the html -->
     <div class="container">
+        <!--- Collapsible Menu -->
         <div class="collapsible-menu">
             <input type="checkbox" id="dashboard-collapse">
             <label for="dashboard-collapse"><span class="material-symbols-outlined">subject</span><span class="dashboard-text">Dashboard</span></label>
@@ -33,7 +36,8 @@
                 </ul>
             </div>
         </div>
-        <div class="header">
+        <!--  header for phone screens -->
+        <div class="header-small">
             <div class="search">
                 <label class="material-symbols-outlined" for="search-bar">search</label>
                 <input type="text" id="search-bar" name="searchBar">
@@ -49,7 +53,23 @@
                 <button>Share</button>
             </div>
         </div>
+        <!-- header for larger devices -->
+        <div class="header-big">
+            <div class="first-line-header">
+                <div class="search">
+                    <label class="material-symbols-outlined" for="search-bar">search</label>
+                    <input type="text" id="search-bar" name="searchBar">
+                </div>
+                <div class="notifications">
+                    <span class="material-symbols-outlined">notifications</span>
+                    <img src="images/penguin-profile.png" alt="penguin profile picture" class="profile-normal">
+                    <span class="name">@simmeringstew</span>
+                </div>
+            </div>
+        </div>
+        <!-- projects area of the page -->
         <div class="projects">
+            <!-- six small cards -->
             <h2 class="card-title">Your Projects</h2>
             <div class="card">
                 <h3 class="in-card-title">Super Cool Project</h3>
@@ -105,6 +125,7 @@
                     <span class="material-symbols-outlined">share</span>
                 </div>
             </div>
+            <!-- two tall cards -->
             <h2 class="card-title">Announcements</h2>
             <div class="tall-card announcements">
                 <h3 class="announcements-title">Site Maintenance</h3>
