@@ -150,16 +150,19 @@
 .card {
     background-color: white;
     width: 85%;
-    height: 4rem;
+    height: 10rem;
     padding: 15px;
     border-radius: 8px;
     border-left: var(--yellow) solid 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .tall-card {
     background-color: white;
     width: 85%;
-    height: 12rem;
+    height: 16rem;
     padding: 15px;
     border-radius: 8px;
 }
@@ -176,4 +179,19 @@
 
 .trending {
     border-left: #16a34a solid 5px;
+}
+
+.in-card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.in-card-text {
+    color: #64748b;
+}
+
+.card-icons {
+    align-self: flex-end;
+    display: flex;
+    gap: 20px;
 }
