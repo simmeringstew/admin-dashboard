@@ -7,7 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="meyer-reset.css">
     <link rel="stylesheet" href="smallscreen.css" media="screen and (max-width: 750px)">
-    <link rel="stylesheet" href="mediumscreen.css" media="screen and (min-width: 750px)">
+    <link rel="stylesheet" href="mediumscreen.css" media="screen and (min-width: 750px) and (max-width: 1200px)">
+    <link rel="stylesheet" href="largescreen.css" media="screen and (min-width: 1200px)">
     <link rel="icon" href="images/gear.png">
     <script defer src="script.js"></script>
     <meta charset="UTF-8">
@@ -16,9 +17,9 @@
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <!--- Main container for the html -->
+    <!--- main container for the html -->
     <div class="container">
-        <!--- Collapsible Menu -->
+        <!--- collapsible menu for small and medium screens -->
         <div class="collapsible-menu">
             <input type="checkbox" id="dashboard-collapse">
             <label for="dashboard-collapse"><span class="material-symbols-outlined">subject</span><span class="dashboard-text">Dashboard</span></label>
@@ -35,6 +36,20 @@
                     <li><a href="#"><span class="material-symbols-outlined">security</span>Privacy</a></li>
                 </ul>
             </div>
+        </div>
+        <!-- side dashboard for large screens -->
+        <div class="dashboard">
+            <nav class="dashboard-content">
+                <span class="material-symbols-outlined subject first-space">subject</span><span class="first-space dashboard-text">Dashboard</span>
+                <span class="material-symbols-outlined smaller-items">home</span><span class="other-dashboard-text">Home</span>
+                <span class="material-symbols-outlined smaller-items">switch_account</span><span class="other-dashboard-text">Profile</span>
+                <span class="material-symbols-outlined smaller-items">chat</span><span class="other-dashboard-text">Messages</span>
+                <span class="material-symbols-outlined smaller-items">history</span><span class="other-dashboard-text">History</span>
+                <span class="material-symbols-outlined smaller-items">task</span><span class="other-dashboard-text">Tasks</span>
+                <span class="material-symbols-outlined smaller-items second-space">groups</span><span class="other-dashboard-text second-space">Communities</span>
+                <span class="material-symbols-outlined smaller-items">settings</span><span class="other-dashboard-text">Settings</span>
+                <span class="material-symbols-outlined smaller-items">contact_support</span><span class="other-dashboard-text">Support</span>
+                <span class="material-symbols-outlined smaller-items">security</span><span class="other-dashboard-text">Privacy</span>
         </div>
         <!--  header for phone screens -->
         <div class="header-small">
@@ -186,72 +201,5 @@
             </div>
         </div>
     </div>
-        <!---
-        <div class="dashboard-background">
-            <div class="dashboard">
-                <span class="material-symbols-outlined first-space" id="bigger-icon">subject</span>
-                <h1 class="dashboard-title first-space">Dashboard</h1>
-                <span class="material-symbols-outlined">home</span>
-                <p>Home</p>
-                <span class="material-symbols-outlined">switch_account</span>
-                <p>Profile</p>
-                <span class="material-symbols-outlined">chat</span>
-                <p>Messages</p>
-                <span class="material-symbols-outlined">history</span>
-                <p>History</p>
-                <span class="material-symbols-outlined">task</span>
-                <p>Tasks</p>
-                <span class="material-symbols-outlined second-space">groups</span>
-                <p class="second-space">Communities</p>
-                <span class="material-symbols-outlined">settings</span>
-                <p>Settings</p>
-                <span class="material-symbols-outlined">contact_support</span>
-                <p>Support</p>
-                <span class="material-symbols-outlined">security</span>
-                <p>Privacy</p>
-            </div>
-        </div>
-        <div class="header">
-            <div class="first-line-header">
-                <div class="search">
-                    <label class="material-symbols-outlined" for="search-bar">search</label>
-                    <input type="text" id="search-bar" name="searchBar">
-                </div>
-                <div class="notifications">
-                    <span class="material-symbols-outlined">notifications</span>
-                    <img src="images/penguin-profile.png" alt="penguin profile picture" class="profile-normal">
-                    <span class="name">simmeringstew</span>
-                </div>
-            </div>
-            <div class="second-line-header">
-                <div class="user">
-                    <img src="images/penguin-profile.png" alt="penguin profile picture" class="profile-bigger">
-                    <div class="greeting">
-                        <small>Hi there,</small>
-                        <h2>simmeringstew (@simmeringstew)</h2>
-                    </div>
-                </div>
-                <div class="buttons">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
-                </div>
-            </div>
-        </div>
-        <div class="projects">
-            <div class="card">
-                <h2 class="your-projects">Your Projects</h2>
-                Hello
-            </div>
-            <div class="card">Bye</div>
-            <div class="tall-card">test</div>
-            <div class="card">Another</div>
-            <div class="card">Another</div>
-            <div class="tall-card">test</div>
-            <div class="card">Another</div>
-            <div class="card">Another</div>
-        </div>
-    </div>
-    --->
 </body>
 </html>

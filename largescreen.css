@@ -1,0 +1,91 @@
+/* page setup
+--------------------------------
+*/
+
+:root {
+    font-family: 'Lato', sans-serif;
+    --blue: #0ea5e9;
+    --yellow: #fde047;
+    --gray: #e5e5e5;
+    --gray-text: #64748b;
+    --profile: 2rem;
+    background-color: var(--gray);
+}
+
+.profile-normal {
+    height: var(--profile);
+    width: var(--profile);
+}
+
+.profile-bigger {
+    height: 3rem;
+    width: 3rem;
+}
+
+.material-symbols-outlined {
+    font-size: 3rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 2;
+}
+
+/* dashboard
+--------------------------------
+*/
+
+.collapsible-menu {
+    display: none;
+}
+
+.header-small {
+    display: none;
+}
+
+.dashboard {
+    background-color: var(--blue);
+    grid-row: span 2;
+}
+
+.dashboard * {
+    color: white;
+    text-decoration: none;
+}
+
+.dashboard-content {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.subject {
+    font-size: 5rem;
+}
+
+.dashboard-text {
+    font-size: 3rem;
+}
+
+.other-dashboard-text {
+    font-size: 2rem;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.first-space {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+.second-space {
+    padding-bottom: 50px;
+}
+
+.smaller-items {
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
