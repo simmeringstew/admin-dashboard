@@ -17,6 +17,11 @@
     width: var(--profile);
 }
 
+.profile-bigger {
+    height: 3rem;
+    width: 3rem;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -84,22 +89,22 @@
 }
 
 .header-big {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
     background-color: white;
     width: 100%;
     box-shadow: 0px 1px 5px gray;
 }
 
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .first-line-header {
-    width: 100%;;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 .search, .notifications {
@@ -118,4 +123,44 @@
 
 .search>input:focus {
     outline-color: var(--blue);
+}
+
+.second-line-header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-profile-text>small {
+    font-size: 0.8rem;
+}
+
+.header-profile-text>div {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.buttons>button {
+    width: 7rem;
+    padding: 0.4rem;
+    border-radius: 16px;
+    border: none;
+    background-color: var(--blue);
+    color: white;
+}
+
+.buttons>button:active {
+    background-color: #09648C;
 }
