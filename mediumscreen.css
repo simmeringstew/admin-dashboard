@@ -28,6 +28,10 @@
     align-items: center;
 }
 
+.dashboard {
+    display: none;
+}
+
 /* collapsible-menu
 --------------------------------
 */
