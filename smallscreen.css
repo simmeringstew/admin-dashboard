@@ -182,7 +182,7 @@
 }
 
 .in-card-title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
@@ -193,5 +193,6 @@
 .card-icons {
     align-self: flex-end;
     display: flex;
+    margin-top: auto;
     gap: 20px;
 }
