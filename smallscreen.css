@@ -79,6 +79,10 @@
 --------------------------------
 */
 
+.header-big {
+    display: none;
+}
+
 .header-small {
     background-color: white;
     width: 100%;
