@@ -181,6 +181,7 @@
     margin-right: 30px;
     display: grid;
     gap: 30px;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "projects-title projects-title"
     "card-one card-two"
